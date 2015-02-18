@@ -27,7 +27,7 @@ Word by word search: (Good for searching via multiple words)
 		
 	for(var i = 0; i < compare1.length; i++) {
 			
-		for(var j = 0; j < compare2.length; i++) {
+		for(var j = 0; j < compare2.length; j++) {
 			var lev = new Levenshtein(compare1[i], compare2[j]);
 			var calc = ((lev.distance / len) * 100).toFixed(2);
 			if(calc < 35) {
